@@ -1,0 +1,122 @@
+body {
+    background-color: #ffffff;
+}
+/* 
+header {
+    background: linear-gradient(90deg, rgb(135, 129, 239) 0%, rgb(153, 153, 219) 35%, rgb(181, 189, 234) 100%);
+    height: 60px;
+    width: 600px;
+} */
+
+.card-header h2 {
+    margin: 0;
+}
+
+.itla {
+    width: 40%;
+    margin-left: 445px;
+}
+
+h1, h2{
+    font-style: initial;
+}
+
+h3{
+    font-size: 150%;
+}
+
+h4{
+    text-align: center;
+    font-weight: 100;
+}
+
+.inicio1{
+    margin-left: 500px;
+}
+
+.inicio2{
+    margin-left: 600px;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+}
+
+
+input{
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button{
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(157, 249, 149);
+    cursor: pointer;
+    margin-left: 223px;
+}
+
+.form-group{
+    margin-right: 35px;
+}
+
+.nombre-apellido{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.correo-cedula{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nacionalidad-direccion{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+}
+
+.acta-cedula{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bachiller-nota{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.medico-foto{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#registerForm .form-group {
+    margin-bottom:25px;
+}
+
+#registerForm button {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.Estudiantes{
+    display: flex;
+    justify-content: center;
+}

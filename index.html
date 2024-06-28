@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Gestión de Admisiones - ITLA</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-5 mb-4">
+        <div class="container">
+            <img class="itla" src="/itla.png" alt="" srcset="">
+            <div class="inicio1">
+                <h1 class="font-weight-light">Gestión de Admisiones - ITLA</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="card mb-4">
+        <div class="inicio2">
+            <div class="card-header">
+                <h2>Registro de Usuario</h2>
+            </div>
+        </div>
+        <div class="inicio3">
+            <h4>Completa el siguiente formulario para que puedas registarte en el proceso de admisiones y al mejor <br>instituto superior del Caribe.</h4>
+        </div>
+        <div class="container1">
+            <div class="card-body">
+                <form id="registerForm">
+                    <div class="caja">
+                        <div class="form-row">
+                            <div class="nombre-apellido">
+                                <div class="form-group col-md-6">
+                                    <label for="nombreCompleto">Nombre</label>
+                                    <input type="text" class="form-control" id="nombreCompleto" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="apellidos" for="apellido">Apellido</label>
+                                    <input type="text" class="form-control" id="apellido" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="correo-cedula">
+                                <div class="form-group col-md-6">
+                                    <label for="correoElectronico">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correoElectronico" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="cedula">Cédula</label>
+                                    <input type="number" class="form-control" id="cedula" maxlength="9" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="nacionalidad-direccion">
+                                <div class="form-group col-md-6">
+                                    <label for="nacionalidad">Nacionalidad</label>
+                                    <input type="text" class="form-control" id="nacionalidad" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="direccion">Dirección</label>
+                                    <input type="text" class="form-control" id="direccion" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>Cargar Documentos</h3>
+                    <div class="acta-cedula">
+                        <div class="form-group">
+                            <label for="actaNacimiento">Acta de Nacimiento (PDF)</label>
+                            <input type="file" class="form-control-file" id="actaNacimiento" accept="application/pdf" required>
+                            <small id="fileSizeActaNacimiento" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="copiaCedula">Copia de Cédula (PDF)</label>
+                            <input type="file" class="form-control-file" id="copiaCedula" accept="application/pdf" required>
+                            <small id="fileSizeCopiaCedula" class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                    <div class="bachiller-nota">
+                        <div class="form-group">
+                            <label for="certificadoBachiller">Certificado de Bachiller (PDF)</label>
+                            <input type="file" class="form-control-file" id="certificadoBachiller" accept="application/pdf" required>
+                            <small id="fileSizeCertificadoBachiller" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="recordNotas">Record de Notas (PDF)</label>
+                            <input type="file" class="form-control-file" id="recordNotas" accept="application/pdf" required>
+                            <small id="fileSizeRecordNotas" class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                    <div class="medico-foto">
+                        <div class="form-group">
+                            <label for="certificadoMedico">Certificado Médico (PDF)</label>
+                            <input type="file" class="form-control-file" id="certificadoMedico" accept="application/pdf" required>
+                            <small id="fileSizeCertificadoMedico" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="foto1"> 2 Fotos 2x2 (PDF)</label>
+                            <input type="file" class="form-control-file" id="foto1" accept="application/pdf" required>
+                            <small id="fileSizeFoto1" class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container2">
+        <div class="card">
+            <div class="card-header">
+                <h2>Estudiantes Registrados</h2>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped" id="studentsTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre Completo</th>
+                            <th>Correo Electrónico</th>
+                            <th>Cédula</th>
+                            <th>Nacionalidad</th>
+                            <th>Dirección</th>
+                            <th>Fecha y Hora de Registro</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se agregarán las filas de los estudiantes registrados -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
